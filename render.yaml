@@ -1,0 +1,13 @@
+services:
+  - type: worker
+    name: mailify-worker
+    runtime: node
+    buildCommand: npm install && npm install -g tsx
+    startCommand: npm run worker
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: NEXTAUTH_SECRET
+        sync: false

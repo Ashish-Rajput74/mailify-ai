@@ -1,0 +1,40 @@
+{
+  "name": "mailify-ai",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "worker": "npx tsx workers/cronWorker.ts"
+  },
+  "dependencies": {
+    "next": "14.2.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "mongoose": "^8.3.4",
+    "nodemailer": "^6.9.13",
+    "@google/generative-ai": "^0.12.0",
+    "next-auth": "^4.24.7",
+    "node-cron": "^3.0.3",
+    "crypto-js": "^4.2.0",
+    "date-fns": "^3.6.0",
+    "lucide-react": "^0.383.0"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/nodemailer": "^6.4.14",
+    "@types/node-cron": "^3.0.11",
+    "@types/crypto-js": "^4.2.2",
+    "tsx": "^4.10.5",
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8",
+    "autoprefixer": "^10.0.1"
+  }
+}
